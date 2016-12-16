@@ -1,0 +1,8 @@
+<%= form_for [@blog, @convo]  do |f| %>
+  <div class="form-group">
+    <%= f.text_field :content, class: "form-control", placeholder: "Name", autofocus: true %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Save Comment", class: "btn btn-block btn-success" %>
+  </div>
+<% end %>

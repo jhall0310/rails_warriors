@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'convos/new'
+
+  get 'convos/create'
+
+  get 'convos/edit'
+
+  get 'convos/destory'
+
+  get 'convos/update'
+
   root to: 'blogs#index'
 
   get 'sessions/create'
@@ -22,7 +32,10 @@ Rails.application.routes.draw do
 
   get 'users/destroy'
 
-resources :blogs
+resources :blogs do
+  resources :convos
+end
+
 
 get '/login' => 'sessions#new'
 post '/login' => 'sessions#create'

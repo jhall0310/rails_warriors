@@ -4,6 +4,14 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all
+    @convos = Convo.all
+  end
+
+  def show
+    blog_id = params[:id]
+    @blog = Blog.find_by(id: blog_id)
+    convo_id = params[:id]
+   @convo = Convo.find_by(id: convo_id)
   end
 
   def update
