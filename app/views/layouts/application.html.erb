@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RWarriors</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Work+Sans', media: 'all' %>
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', media: 'all' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="login">
+      <% if current_user %>
+        Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+        <% else %>
+        <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+        <% end %>
+      </div>
+
+      <head>
+        <div class="header">
+          <div class="header_txt">
+
+
+          <h1>Warriors Blog</h1>
+            <p>The Best stop for warrior stories</p>
+                </div>
+              </div>
+            </head>
+
+        <div class="container">
+
+
+
+    <%= yield %>
+      </div>
+  </body>
+</html>

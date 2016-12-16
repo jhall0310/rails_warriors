@@ -1,0 +1,30 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#article {
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15pt;
+}
+
+#blog_link {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15pt;
+}
+
+#form {
+  width: 500px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 25pt;
+  text-align: center;
+}
